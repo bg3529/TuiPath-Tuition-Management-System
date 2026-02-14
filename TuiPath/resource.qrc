@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="images">
+    <file>logout.png</file>
+    <file>notification.png</file>
+    <file>profile.png</file>
+    <file>attendance.png</file>
+    <file>hand.png</file>
+    <file>reading-book.png</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>

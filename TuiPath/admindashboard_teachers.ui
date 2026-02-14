@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>admindashboard_teachers</class>
+ <widget class="QWidget" name="admindashboard_teachers">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">color: #111;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;;
+    background-color: transparent;
+    padding-bottom: 5px;
+   </string>
+       </property>
+       <property name="text">
+        <string>Search by Teacher_Id</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="searchbyteacherid">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #a0eec0;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff8591;
+    background-color: #f9f9f9;
+}
+
+QLineEdit::placeholder {
+    color: #95a5a6;
+    font-style: italic;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Teacher ID</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="styleSheet">
+        <string notr="true">color: #111;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: &quot;Segoe UI&quot;;
+    background-color: transparent;
+    padding-bottom: 5px;
+   </string>
+       </property>
+       <property name="text">
+        <string>Search by Teacher Email</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="searchbyteacheremail">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: #ffffff;
+    border: 2px solid #a0eec0;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff8591;
+    background-color: #f9f9f9;
+}
+
+QLineEdit::placeholder {
+    color: #95a5a6;
+    font-style: italic;
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>Enter Teacher Email</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="styleSheet">
+         <string notr="true">QTableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f2f2f2;
+    selection-background-color: #a0eec0;
+    selection-color: #000000;
+    border: 1px solid #dcdcdc;
+    gridline-color: #dcdcdc;
+}
+
+QHeaderView::section {
+    background-color: #f8f9fa;
+    padding: 4px;
+    border: 1px solid #dcdcdc;
+    font-weight: bold;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QPushButton" name="addateache">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(152, 176, 255);
+background-color: rgb(228, 255, 49);
+font: 11pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Add A Teacher</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="createyouraccount">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>Fill the form correctly</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Segoe UI&quot;;
+border-colour: 2px solid rgb(0, 0, 0);
+</string>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QWidget" name="widget_2" native="true">
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>Name</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="td_name"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_8">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>ID</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="td_id"/>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_9">
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>12</pointsize>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;Segoe UI&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>Email</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="td_email"/>
+               </item>
+               <item>
+                <spacer name="verticalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="saveteacherbutton">
+           <property name="styleSheet">
+            <string notr="true">font: 600 11pt &quot;Segoe UI&quot;;
+background-color: rgb(160, 157, 255);</string>
+           </property>
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="deleteteacher">
+           <property name="styleSheet">
+            <string notr="true">font: 600 11pt &quot;Segoe UI&quot;;
+background-color: rgb(255, 102, 168);</string>
+           </property>
+           <property name="text">
+            <string>Delete Teacher</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
